@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 1rem;
+  background-color: #646464;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-radio:checked::after {
+  content: url("./tick.svg");
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-radio:checked {
+  background-color: #2563eb;
+}
+
+.custom-arrow {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("./arrow.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) center;
+  padding-right: 24px;
+}
+
+.custom-arrow::-ms-expand {
+  display: none;
+}
