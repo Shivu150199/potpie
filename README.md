@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/5e525d32-f0c2-4b23-98f7-ec4ca22dbb03)
 
 ### Overview
 This project is designed to visualize a graph using data fetched from a mock API. The frontend is built with **Create React App (CRA)** for a seamless React environment. The **React Flow** library is used to manage and render the graph, while **Tailwind CSS** provides a utility-first approach to styling.
